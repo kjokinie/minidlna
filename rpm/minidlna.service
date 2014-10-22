@@ -1,0 +1,9 @@
+[Unit]
+Description=Mini DLNA server
+
+[Service]
+ExecStart=/usr/sbin/minidlnad -S
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
